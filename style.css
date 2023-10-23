@@ -26,28 +26,29 @@ body{
  }
 .beatlink{
   background-image: url(bg.jpg);
-  width: auto;
-  height: 40em;
   background-size: cover;
+  width: 100%;
+  height: 40em;
   text-align: center;
   color: goldenrod;
 }
 .beatlink .welcome{
-  margin-top: .5em; 
+  margin-top: .1em; 
   padding-top: .5em;  
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 500;
+  color: rgba(225, 233, 233, 0.815);
 }
 .beatlink .btn{
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: rgb(46, 46, 46);
     font-family: 'Alumni Sans Collegiate One', sans-serif;
     color: rgb(209, 156, 22);
-    font-size: 40px;
+    font-size: 30px;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
