@@ -2,116 +2,314 @@
 @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
-/***************************************************/
-/***************************************************/
-/**********************BY JOE SUMBI*****************/
-/***************************************************/
-/***************************************************/
-
-*{
-    margin: 0;
-    border: 0;
+* {
+    box-sizing: border-box;
     text-decoration: none;
+  } 
+
+  /* Add a gray background color with some padding */
+  body {
+    font-family: 'Padauk', sans-serif;
+    padding: 20px;
+    background: #292727;
+  }
+  .iphone img{
+    display: flex;
+    margin-left: 2.5%;
+    float: left;
+    margin-top: 10px;
+    width: 95%;
+  }
+  #top-cont{
+    margin-bottom:1%;
+  }
+  .marq{
+    color: rgb(245, 166, 77);
+    font-size: 18px;
+  }
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2b9b67;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Header/Blog Title */
+  .header {
+    font-family: 'Titillium Web', sans-serif;
+    color: goldenrod;
+    font-weight: 600;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(63, 60, 62) 47%, rgba(224, 219, 219, 0.586) 91%);
+  }
+  .ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+  }
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg{
+    background-color:none;
+    width: 100%;
+    padding: 20px;
+  }
+  .fakeimg img{
+      width: 100%;
+      height:100%;
+  }
+  
+  /* Add a card effect for articles */
+  .card {    
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+#royal{
+  color: rgb(84, 154, 196);
 }
-body{
-  background-color: black;
-  font-family: 'Playpen Sans', cursive;
+#pop img a{
+  height: 150px;
 }
- .header h1{
-  font-family: 'Alumni Sans Collegiate One', sans-serif; 
-  font-weight: 400;
-  font-size: 72px;
-   text-align: center;
-   background-color: rgb(0, 0, 0);
-   color: rgb(219, 241, 234);
- }
-  /* animation: 
-  typing 3.3s steps(40, end),
-  blink-caret .75s step-end infinite;
+#pop img{
+  transition: all .3s ease;
+  
+}
+#pop img:hover{
+  transform: scale(1.05);
+}
+.ads1 {
+  font-size: 12px;    
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 66%;
 }
 
-/* The typing effect */
-/*@keyframes typing {
-from { width: 0 }
-to { width: 100% }
+.ad1 a{
+  text-decoration: none; 
+  color: rgb(3, 143, 101);
+  transition: all .3s ease;
+}
+.ad1 a:hover{
+  background: #fff;
+  transform: scale(1);
+  color: red;
+}
+.ad2 a img{
+  width: 100%;
+  display: block;
+  margin-top: 5%;
+}
+.ads2 {
+  font-size: 12px;    
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 5%;
+}
+.ad2 {
+  animation: blink 1s steps(1, end) infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ads3 img {
+  width: 100%;
+  font-size: 12px;    
+  background-color: none;
+  padding: 5px;
+  margin-top: 25%;
 }
 
-/* The typewriter cursor effect */
-/*@keyframes blink-caret {
-from, to { border-color: transparent }
-50% { border-color: orange; }
-}
-*/
- 
- .songs p, h4{
-    margin-top: 1.5em;
-    color: rgb(159, 239, 245);
- }
 
- a{
-   color: rgb(248, 184, 99);
- }
-
- .beats{
-  margin-top: 2em;
-  margin-bottom: 15rem;
+.next-prev{
+  cursor: pointer;
+  color: rgb(77, 78, 78);
+  font-size: 24px;
   text-align: center;
- }
-
- .beats h2{
-  letter-spacing: 2px;
-  font-family: 'Sedgwick Ave Display';
-  font-size: 30px;
-  color: goldenrod;
-  margin-bottom: .2em;
- }
- 
- .beats li{
-   padding: 1rem;
- }
- .beats ul li{
-   margin-top: .5em;
- }
- .beats a:hover{
-   color:rgb(90, 31, 129);
- }
-
- .nxtprev {
-  margin-left: 44%;
+  margin-top: 3%;
 }
- .nxtprev a{
-  text-decoration: none;
+
+/*********
+Pagination
+*********/
+.pagination {
+  margin-top: 15px;
   display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.pagination a {
+  color: rgb(255, 255, 255);
   padding: 8px 16px;
+  text-decoration: none;
 }
 
-.nxtprev a:hover {
-  background-color: rgb(40, 40, 40);
-  color: goldenrod;
+.pagination a.active {
+  background-color: #31a06c;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
 }
 
-.previous {
-  background-color: gold;
-  color: rgb(40, 40, 40);
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+.pagination-2 {
+  display: none;
 }
 
-.next {
-  background-color:rgb(90, 31, 129);
-  color: white;
+/******
+ Footer 
+******/
+ 
+.footer h2{
+    padding: 15px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .footer h2{
+    font-family:'Playpen' Sans-serif ;
+  }
+  .footer a{
+    font-family:'Sedgwick Ave';
+    font-weight: 600;
+      color: rgb(224, 36, 139);;
+  }
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    #pop img{
+      height: 50%;
+    }
+    .ads1{
+      margin-top: 1%;
+    }
+    .ads3{
+      width: 100%;
+      margin-top: 5%;
+    }
+.example{
+      padding: 10px;
+      font-size: 17px;
+      float: left;
+      width: 100%;
+      
+    }
+    .marq {
+      
+      width: 90%;
+    }
+    .pagination {
+      display: none;
+    }
+    .pagination-2 {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 5%;
+    }
+    
+    .pagination-2 a {
+      color: rgb(255, 255, 255);
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+    
+    .pagination-2 a.active {
+      background-color: #3fbb87;
+      color: rgb(0, 0, 0);
+      border-radius: 5px;
+    }
+    
+    .pagination-2 a:hover:not(.active) {
+      background-color: #ddd;
+      border-radius: 5px;
+    }
 }
-
-.round {
-  border-radius: 50%;
-} 
-
-footer{
-  margin-top: 5em;
+  @media screen and (max-width: 600px) {
+    .header {
+      font-size: 14px;
+    }
+  
+    .iphone img{
+          width: 75%;
+    }
 }
- footer p{
-   background-color: rgb(31, 31, 31);
-   font-family: 'Titillium Web', sans-serif;
-   font-size: 16px;
-   font-weight: 300;
-   color: goldenrod;
-   text-align: center;
- }
+@media screen and (max-width: 367px) {
+  .header {
+    font-size: 10px;
+  }}
