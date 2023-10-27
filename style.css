@@ -67,6 +67,7 @@
     text-align: center;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(63, 60, 62) 47%, rgba(224, 219, 219, 0.586) 91%);
+    height:11em;
   }
   marquee{
     font-family: 'Titillium Web', sans-serif;
